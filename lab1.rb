@@ -29,7 +29,7 @@ class ComplexNumber
   def bulk_multiply(cns)
    result = cns[0]
     if cns.length > 0 then
-      cns.each_index do |item|
+      (1...cns.length).each do |item|
         result *= cns[item]
       end
     end
